@@ -6,7 +6,6 @@ export default function UserContainer() {
     <div
       style={{
         textAlign: 'center',
-        paddingTop: '7rem',
       }}
     >
         <h1>Users</h1>  
