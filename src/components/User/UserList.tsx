@@ -48,7 +48,7 @@ const UserList: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [loading, page, totalPages]);
 
-    if (!error) {
+    if (error) {
         return <ErrorComponent />;
     }
 
