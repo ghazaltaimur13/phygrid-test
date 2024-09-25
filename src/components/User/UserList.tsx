@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Loader from '../Loader/Loader';
 import { ListContainer, NoData, UserImage, UserItem, UserName } from './User.style';
+import ErrorComponent from '../ErrorComponent/ErrorComponent';
 
 interface User {
     id: string;
@@ -47,8 +48,8 @@ const UserList: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [loading, page, totalPages]);
 
-    if (error) {
-        return <div>Error: {error}</div>;
+    if (!error) {
+        return <ErrorComponent />;
     }
 
     return (

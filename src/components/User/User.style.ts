@@ -8,9 +8,8 @@ export const UserItem = styled.div`
   display: flex;
   align-items: center;
   padding: 20px;
-  margin: 10px;
+  margin: 2px;
   background-color: #f0f0f0;
-
 `;
 
 export const UserImage = styled.img`
