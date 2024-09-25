@@ -8,7 +8,7 @@ export const UserItem = styled.div`
   display: flex;
   align-items: center;
   padding: 20px;
-  margin: 2px;
+  margin: 5px;
   background-color: #f0f0f0;
 `;
 
@@ -27,4 +27,17 @@ export const NoData = styled.div`
   font-size: 20px;
   margin: 25px;
   font-weight: 600;
+`;
+
+export const NextButton = styled.button`
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #7fb900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: #d0e5a3;
+    }
 `;
